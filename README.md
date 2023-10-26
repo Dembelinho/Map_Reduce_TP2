@@ -36,16 +36,6 @@ Chaque ligne du fichier `ventes.txt` contient des informations sur les ventes de
 Pour cet exercice, vous développerez un deuxième Job MapReduce qui calcule le prix total des ventes de produits par ville pour une année donnée,   
 en utilisant les données du fichier `ventes.txt`.
 
-### Étapes pour résoudre l'exercice 2 :
-
-1. Créez un programme MapReduce distinct pour cet exercice, en spécifiant un Mapper et un Reducer appropriés.
-
-2. Dans le Mapper, analysez chaque ligne du fichier journal, extrayez l'adresse IP et le code de réponse HTTP, puis émettez un couple clé-valeur.
-   La clé doit contenir l'adresse IP et le code de réponse HTTP (par exemple, "192.168.1.1-200"), et la valeur est 1 pour compter la requête.
-
-4. Dans le Reducer, regroupez les données par adresse IP et code de réponse HTTP, puis comptez le nombre de requêtes pour chaque combinaison.
-    Émettez un résultat par adresse IP, indiquant le nombre total de requêtes et le nombre de requêtes réussies.
-
 ## Exécution des exemples :
 
 - Compilez le code Java en fichiers JAR pour les deux exercices.
